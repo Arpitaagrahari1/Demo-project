@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        #a {
+            height: 600px;
+            width: 90%;
+            background-color: grey;
+            margin-left: 5%;
+            margin-top: 40px;
+            margin-right: 5%;
+            color: white;
+        }
+        
+        #b {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+        }
+        
+        #b1 {
+            height: 60px;
+            width: 100%;
+        }
+        
+        #b11 {
+            height: 60px;
+            width: 5%;
+            float: left;
+            border: none;
+        }
+        
+        #b12 {
+            height: 60px;
+            width: 12%;
+            float: left;
+        }
+        
+        #b13 {
+            height: 30px;
+            width: 45%;
+            float: left;
+            margin-top: 10px;
+        }
+        
+        #b131 {
+            height: 30px;
+            width: 15%;
+            float: left;
+            background-color: aliceblue;
+        }
+        
+        #b132 {
+            height: 30px;
+            width: 73%;
+            float: left;
+        }
+        
+        #b132 input {
+            height: 30px;
+            width: 100%;
+        }
+        
+        #b133 {
+            height: 28px;
+            width: 12%;
+            float: left;
+            background-color: white;
+            margin-top: 1px;
+            margin-left: -40px;
+        }
+        
+        #b14 {
+            height: 60px;
+            width: 8%;
+            float: left;
+            margin-top: 10px;
+        }
+        
+        #b14 select {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        #b15 select {
+            background-color: black;
+            color: white;
+            font-size: 10px;
+        }
+        
+        #b15 {
+            height: 60px;
+            width: 12%;
+            float: left;
+            color: white;
+        }
+        
+        #b16 {
+            height: 60px;
+            width: 8%;
+            float: left;
+            margin-top: 5px;
+        }
+        
+        #b17 {
+            height: 60px;
+            width: 7%;
+            float: left;
+        }
+        
+        #b2 {
+            height: 40px;
+            width: 100%;
+            background-color: darkslategrey;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        ul li {
+            height: 100%;
+            width: 10%;
+            float: left;
+            text-align: center;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 50px;
+            color: white;
+            transition: 1s;
+            padding-bottom: 5px;
+        }
+        
+        ul li a:hover {
+            background-color: whitesmoke;
+            color: black;
+            display: block;
+        }
+        
+        #d {
+            height: 500px;
+            width: 100%;
+            background: url('Shop2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #c {
+            height: 250px;
+            width: 100%;
+            /* background: url('Shop2.png')no-repeat;
+            background-size: 100% 100%; */
+            margin-top: 20px;
+        }
+        
+        #c1 {
+            height: 240px;
+            width: 98%;
+            background-color: whitesmoke;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #c2 {
+            height: 50px;
+            width: 100%;
+            color: black;
+        }
+        
+        #c3 {
+            height: 190px;
+            width: 100%;
+            float: left;
+        }
+        
+        #c4 {
+            height: 190px;
+            width: 25%;
+            float: left;
+            background: url('box3.jpg')no-repeat;
+            background-size: 90% 100%;
+        }
+        
+        #c5 {
+            height: 190px;
+            width: 25%;
+            float: left;
+            background: url('box2.jpg')no-repeat;
+            background-size: 90% 100%;
+        }
+        
+        #c6 {
+            height: 190px;
+            width: 25%;
+            float: left;
+            background: url('box1.jpg')no-repeat;
+            background-size: 90% 100%;
+        }
+        
+        #c7 {
+            height: 190px;
+            width: 25%;
+            float: left;
+            background: url('box4.jpg')no-repeat;
+            background-size: 90% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">
+        <div id="b">
+            <div id="b1">
+                <div id="b11">
+                    <img src="amz1.jpg" alt="" height="60px" width="100%">
+                </div>
+                <div id="b12">
+                    <a href=""><img src="amz2.jpg.png" alt="" height="60px" width="100%"></a>
+                </div>
+                <div id="b13">
+                    <div id="b131">
+                        <select style="width: 100%; height: 30px;">
+                            <option value="">All</option>
+                            <option value="">grossary</option>
+                            <option value="">cloth</option>
+                            <option value="">sandle</option>
+                            <option value="">Shoose</option>
+                        </select>
+                    </div>
+                    <div id="b132">
+                        <input type="text" placeholder="Search Amazon.in">
+                    </div>
+                    <div id="b133">
+                        <img src="M22.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+                <div id="b14">
+                    <select style="width: 90%; height: 30px;">
+                        <option value="">🏳️‍🌈IND</option>
+                        <option value="">bang</option>
+                        <option value="">Safr</option>
+                        <option value="">noida</option>
+                        <option value="">china</option>
+                    </select>
+
+                </div>
+                <div id="b15">hello,sign in
+                    <br>
+                    <select style="width: 60%; height: 30px;">
+                        <option value="">Account & Lists</option>
+                        <option value="">bang</option>
+                        <option value="">Safr</option>
+                        <option value="">noida</option>
+                        <option value="">china</option>
+                    </select>
+                </div>
+                <div id="b16">Return<br>&Orders
+
+                </div>
+                <div id="b17">Add to<br> cart➡️</div>
+            </div>
+            <div id="b2">
+                <ul>
+                    <li><a href="">➡️➡️All</a></li>
+                    <li><a href="">Fresh</a></li>
+                    <li><a href="">AmazonminiTv</a></li>
+                    <li><a href="">Sell</a></li>
+                    <li><a href="">Best Sellers</a></li>
+                    <li><a href="">Today Deals</a></li>
+                    <li><a href="">Computer</a></li>
+                    <li><a href="">Home&Kitchen</a></li>
+                    <li><a href="">Other</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="d">
+            <div id="d">
+
+
+                <a href="#abc" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#abc" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+                <div id="c"></div>
+                <div id="c1">
+                    <div id="c2">Up to 60% off| Inverter batteries,kitchen tools & more from local stores nearby<a href="" style="text-decoration: none;">See all offers</a></div>
+                    <div id="c3">
+                        <div id="c4"></div>
+                        <div id="c5"></div>
+                        <div id="c6"></div>
+                        <div id="c7"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
